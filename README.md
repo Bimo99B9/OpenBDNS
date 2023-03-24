@@ -69,7 +69,7 @@ La normativa señala que el hecho de que una página web sea pública, accesible
 -   Prevalece el interés del responsable del tratamiento sobre el derecho a la protección de datos.
 -   La persona rastreada lo es bajo su consentimiento.
 
-![[assets/Pasted image 20230303200509.png]]
+![["assets/Pasted image 20230303200509.png"]]
 
 ---
 # Ejemplos de Web Scraping
