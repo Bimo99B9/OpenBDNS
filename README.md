@@ -37,14 +37,14 @@ Este proceso conlleva:
 - Incluso métodos que aplican deep learning para simular el comportamiento humano. (IA?) -> Saltarse Captchas.
 
 ## Fases del ataque.
-![[assets/Pasted image 20230303201403.png]]
+![](assets/Pasted image 20230303201403.png)
 
 Página muy completa:
 https://securityboulevard.com/2018/10/how-scraping-attacks-can-compromise-web-security-and-impact-business-continuity/
 
 Uso de botnets:
 https://www.iebschool.com/blog/que-es-el-web-scrapping-y-como-se-utiliza-en-los-negocios-digital-business/
-![[assets/Pasted image 20230303203057.png]]
+![](assets/Pasted image 20230303203057.png)
 
 
 ---
@@ -69,7 +69,7 @@ La normativa señala que el hecho de que una página web sea pública, accesible
 -   Prevalece el interés del responsable del tratamiento sobre el derecho a la protección de datos.
 -   La persona rastreada lo es bajo su consentimiento.
 
-![["assets/Pasted image 20230303200509.png"]]
+![](assets/Pasted image 20230303200509.png)
 
 ---
 # Ejemplos de Web Scraping
@@ -120,7 +120,7 @@ Esto da a las empresas de ciberseguridad información fresca y actualizada en ti
 
 Este procedimiento es mucho más óptimo si está automatizado con web scraping que si se hace manualmente. Construir una herramienta de web scraping es bastante sencillo. La dificultad es mantener un flujo constante de datos y sobrepasar algoritmos para detectar estas herramientas.
 
-![[assets/Pasted image 20230304114047.png]]
+![](assets/Pasted image 20230304114047.png)
 Fuente: https://scholar.uc.edu/downloads/pr76f495c?locale=en
 
 Se usan herramientas de procesamiento de lenguaje natural (NLP), o perceptrones multicapa (MLP) como clasificadores para procesar toda la información minada y extraída con estas técnicas con el objetivo de dar alertas de amenazas en tiempo real.
@@ -131,23 +131,23 @@ https://www.misp-project.org/
 
 Créditos: https://twitter.com/JaimeObregon/status/1508880926587056128?s=20&t=RZUOY0eIfeHNAVjXutxybw
 
-![[assets/Pasted image 20230317233001.png]]
+![](assets/Pasted image 20230317233001.png)
 
 Flujo de solicitudes:
 
 1 - Conseguir Cookies iniciales
-![[assets/Pasted image 20230321222424.png]]
+![](assets/Pasted image 20230321222424.png)
 
 2 - Actualización de la cookie:
-![[assets/Pasted image 20230321222719.png]]
-![[assets/Pasted image 20230321223416.png]]
+![](assets/Pasted image 20230321222719.png)
+![](assets/Pasted image 20230321223416.png)
 
 Se utiliza un token CSRF para validar la sesión.
 
-![[assets/Pasted image 20230319213952.png]]
+![](assets/Pasted image 20230319213952.png)
 
 Esa solicitud lleva un parámetro "`_csrf`" escondido en la web.
-![[assets/Pasted image 20230320124305.png]]
+![](assets/Pasted image 20230320124305.png)
 
 El token CSRF (Cross-Site Request Forgery) se utiliza para evitar ataques de falsificación de solicitudes en sitios cruzados. Un ataque CSRF ocurre cuando un atacante intenta hacer que un usuario realice una acción en un sitio web sin su conocimiento o consentimiento.
 
@@ -157,11 +157,11 @@ De esta manera, si un atacante intenta falsificar una solicitud en nombre del us
 
 3- Con la cookie de sesión validada, se llama a la búsqueda:
 3.1 - Respuesta válida
-![[assets/Pasted image 20230321231832.png]]
+![](assets/Pasted image 20230321231832.png)
 
 
 3.2 - Respuesta si no se siguieron los pasos de antes y sólo se llama a la búsqueda
-![[assets/Pasted image 20230321231924.png]]
+![](assets/Pasted image 20230321231924.png)
 
 No devuelve "302 Moved Temporarily", sino un 200 con 0 filas en el JSON resultado.
 El 302 lo devolvería si la cookie no fuese válida, pero este 200 "falso" es porque no se aprobó el tóken CSRF en el POST.
@@ -171,28 +171,28 @@ El 302 lo devolvería si la cookie no fuese válida, pero este 200 "falso" es po
 Tenemos que recuperarlo haciendo una solicitud a la web y buscando en la respuesta.
 
 El código:
-![[assets/beautify-picture (2).png]]
+![](assets/beautify-picture (2).png)
 
-![[assets/beautify-picture (3).png]]
+![](assets/beautify-picture (3).png)
 
-![[assets/beautify-picture (4).png]]
+![](assets/beautify-picture (4).png)
 
-![[assets/beautify-picture (5).png]]
+![](assets/beautify-picture (5).png)
 
-![[assets/beautify-picture (4).png]]
-
-
-![[assets/Pasted image 20230320180641.png]]
+![](assets/beautify-picture (4).png)
 
 
-![[assets/Pasted image 20230320180723.png]]
+![](assets/Pasted image 20230320180641.png)
 
-![[assets/Pasted image 20230321231613.png]]
+
+![](assets/Pasted image 20230320180723.png)
+
+![](assets/Pasted image 20230321231613.png)
 
 
 
 La web se cayó:
-![[assets/Pasted image 20230318131519.png]]
+![](assets/Pasted image 20230318131519.png)
 
 # AutoUniCalendar
 
@@ -230,7 +230,7 @@ Esos parámetros son la cookie de la sesión del usuario, que es un identificado
 
 # Conclusiones y consideraciones
 Hablar de IA + Scraping
-![[assets/Pasted image 20230319105423.png]]
+![](assets/Pasted image 20230319105423.png)
 
 
 # ScrapingBee
@@ -239,9 +239,9 @@ https://www.scrapingbee.com/blog/
 
 Curl a Python
 https://curlconverter.com/python-httpclient/
-![[assets/Pasted image 20230321233308.png]]
+![](assets/Pasted image 20230321233308.png)
 
 ChatGPT:
 
-![[assets/Pasted image 20230319223349.png]]
+![](assets/Pasted image 20230319223349.png)
 
